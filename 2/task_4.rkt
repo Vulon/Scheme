@@ -1,0 +1,11 @@
+#lang racket
+(print "Enter r1")
+(define r1 (read))
+(print "Enter r2")
+(define r2 (read))
+(print "Enter type (1-sequential)")
+(define t (read))
+(if (= t 1)
+(print (+ r1 r2))
+(print (/ (* r1 r2) (+ r1 r2)))
+)
